@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashid Dental AI Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            resize: vertical;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .response-box {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f7ff;
+            border: 1px solid #d0e3ff;
+            border-radius: 8px;
+            text-align: left;
+            font-size: 14px;
+            min-height: 60px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <h2>🦷 Rashid Dental AI Assistant</h2>
+        <p>Welcome! Ask any question about Rashid Dental Clinic.</p>
+
+        <textarea id="userInput" placeholder="Ask a question..."></textarea>
+        <button id="askBtn">Ask AI</button>
+
+        <div id="response" class="response-box">
+            AI response will appear here...
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
